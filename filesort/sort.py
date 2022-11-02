@@ -43,7 +43,7 @@ for line in file:
     # mv /mnt/c/Users/Sean/Desktop/file.pdf /mnt/c/Users/Sean/Desktop/pdf
     cmd4 = 'mv ' + loc1 + '/' + '\'' + line + '\'' + ' ' + loc1 + '/' + file_type3
     os.system(cmd4)
-    # directory is moved to destination
+
 
 transfer_file_dir()
 

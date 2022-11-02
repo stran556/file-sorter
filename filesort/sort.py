@@ -5,19 +5,20 @@ import subprocess
 loc1 = "input source here"
 loc2 = "input destination here"
 
-
 cmd = 'ls -p ' + loc1 + ' | grep -v / > lsfile.txt'
 os.system(cmd)
 file = open("lsfile.txt", "r")
 file_dir = []
 
 
+# Transfers directories from source to destination after all files are sorted
 def transfer_file_dir():
     for file_t in file_dir:
         cmd3 = 'mv ' + loc1 + '/' + file_t + ' ' + loc2
         os.system(cmd3)
 
 
+# Creates directories if none are found
 def add_file_dir(name):
     file_type = name[name.rfind(".") + 1:]
     found = False
@@ -43,7 +44,6 @@ for line in file:
     # mv /mnt/c/Users/Sean/Desktop/file.pdf /mnt/c/Users/Sean/Desktop/pdf
     cmd4 = 'mv ' + loc1 + '/' + '\'' + line + '\'' + ' ' + loc1 + '/' + file_type3
     os.system(cmd4)
-
 
 transfer_file_dir()
 

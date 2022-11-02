@@ -4,10 +4,11 @@ import subprocess
 # Preset source location and destination of sort
 loc1 = "input source here"
 loc2 = "input destination here"
+loc3 = "input file-sort location here"
 
-cmd = 'ls -p ' + loc1 + ' | grep -v / > lsfile.txt'
+cmd = 'ls -p ' + loc1 + ' | grep -v / > ' + loc3 + '\/'  + 'lsfile.txt'
 os.system(cmd)
-file = open("lsfile.txt", "r")
+file = open(loc3 + "/lsfile.txt", "r")
 file_dir = []
 
 
@@ -33,7 +34,6 @@ def add_file_dir(name):
         cmd2 = 'mkdir ' + loc1 + '/' + file_type
         os.system(cmd2)
 
-    print(file_type)
     return file_type
 
 
@@ -46,5 +46,3 @@ for line in file:
     os.system(cmd4)
 
 transfer_file_dir()
-
-print(file_dir)

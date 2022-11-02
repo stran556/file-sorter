@@ -2,8 +2,8 @@ import os
 import subprocess
 
 # Preset source location and destination of sort
-loc1 = "/mnt/c/Users/Sean/Desktop"
-loc2 = "/mnt/c/Users/Sean/Documents"
+loc1 = "input source here"
+loc2 = "input destination here"
 
 
 cmd = 'ls -p ' + loc1 + ' | grep -v / > lsfile.txt'

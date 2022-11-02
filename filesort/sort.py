@@ -29,6 +29,7 @@ def add_file_dir(name):
             continue
     if not found:
         file_dir.append(file_type)
+        print("Creating directory: " + file_type)
 
         # directory is created in source if necessary
         cmd2 = 'mkdir ' + loc1 + '/' + file_type
@@ -41,6 +42,7 @@ for line in file:
     line = line[:-1]
     file_type3 = add_file_dir(line)
 
+    print("Transferring: " + line)
     # mv /mnt/c/Users/Sean/Desktop/file.pdf /mnt/c/Users/Sean/Desktop/pdf
     cmd4 = 'mv ' + loc1 + '/' + '\'' + line + '\'' + ' ' + loc1 + '/' + file_type3
     os.system(cmd4)

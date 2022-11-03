@@ -4,9 +4,9 @@ import os
 import subprocess
 
 # Preset source location and destination of disperse
-loc1 = "/mnt/c/Users/Sean/Documents"
-loc2 = "/mnt/c/Users/Sean/Desktop"
-loc3 = "/mnt/c/Users/Sean/Desktop/bash/scripts/filesort"
+loc1 = "Input source location"
+loc2 = "Input destination"
+loc3 = "Input file location"
 
 
 def disperse(d):
@@ -16,6 +16,8 @@ def disperse(d):
     for name2 in file2:
         cmd3 = 'mv ' + loc1 + '\/' + d + '\/' + '\'' + name2.strip() + '\'' + ' ' + loc2
         os.system(cmd3)
+    cmd4 = 'rmdir ' + loc1 + '\/' + d
+    os.system(cmd4)
 
 
 cmd = 'ls -p ' + loc1 + ' | grep / | rev | cut -c 2- | rev > ' + loc3 + '\/' + 'lsfile.txt'
@@ -35,8 +37,8 @@ while directory != "":
     if found:
         disperse(directory)
     else:
-        if(directory != ""):
-            print("Directory not found.")
+        if directory != "":
+            print(directory + ": Directory not found.")
         else:
             print("File dispersal ended.")
 

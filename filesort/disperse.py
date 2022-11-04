@@ -4,9 +4,9 @@ import os
 import subprocess
 
 # Preset source location and destination of disperse
-loc1 = "/mnt/c/Users/Sean/Documents"
-loc2 = "/mnt/c/Users/Sean/Desktop"
-loc3 = "/mnt/c/Users/Sean/Desktop/bash/scripts/filesort"
+loc1 = "input source here"
+loc2 = "input destination here"
+loc3 = "input file-sort location here"
 
 
 # Disperse contents of directory to destination

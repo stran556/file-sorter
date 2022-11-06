@@ -16,5 +16,5 @@ Disperse folders one-by-one from a source location into the destination
 
 This program interlaps Python3 with Linux system calls to accomplish the sorting task. If directories for a file format are already found in the destination directory, they will be sorted into files, but will not be transferred from the source. If directories are already found in the source but not the destination, the files will still be sorted and transferred.
 
-###Tools that may need installation: 
+### Tools that may need installation: 
 Python3- Running .py files (sort, disperse)

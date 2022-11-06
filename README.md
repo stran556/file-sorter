@@ -14,9 +14,11 @@ Sort files from a source location into directories in the destination
 
 ## filesort -d
 
-Disperse folders one-by-one from a source location into the destination
+Disperse folders one-by-one from a source location into the destination (And sort them again with '-s') 
+
+![](https://github.com/stran556/file-sorter/blob/main/dispGIF.gif)
 
 This program interlaps Python3 with Linux system calls to accomplish the sorting task. If directories for a file format are already found in the destination directory, they will be sorted into files, but will not be transferred from the source. If directories are already found in the source but not the destination, the files will still be sorted and transferred.
 
 ### Tools that may need installation: 
-Python3- Running .py files (sort, disperse)
+python3- Running .py files (sort, disperse)

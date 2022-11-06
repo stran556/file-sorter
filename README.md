@@ -6,11 +6,13 @@ Filesort cleans your desktop for you by organizing files into directories by for
 
 Fill in the preset values 'loc1' and 'loc2' for the source and destination in 'sort.py' and 'disperse.py'. Filesort will do the rest.
 
-## fs -s
+## filesort -s
 
 Sort files from a source location into directories in the destination
 
-## fs -d
+![](https://github.com/stran556/file-sorter/blob/main/sortGIF.gif)
+
+## filesort -d
 
 Disperse folders one-by-one from a source location into the destination
 
